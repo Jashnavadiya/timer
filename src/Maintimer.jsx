@@ -46,7 +46,7 @@ const Maintimer = () => {
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="1000" className="w-7/12 relative" style={{ color: "#cccccc" }}>
-        <div className="" style={{transform:"translate(0,100%)"}}>
+        <div className="" style={{transform:"translate(0,50%)"}}>
           <h1 className="flex justify-between w-10/12 m-auto">
             <button className="w-1/5" onClick={()=>{setTime({hour:0,min:25,sec:0}) ;setstart(false)}} style={{padding:"10px 15px",fontSize:"17px", border:"1px solid #cccccc",borderRadius:"11px"} }>Pomodoro</button>
             <button className="w-1/5" onClick={()=>{setTime({hour:0,min:5,sec:0}) ;setstart(false)}} style={{padding:"10px 15px",fontSize:"17px", border:"1px solid #cccccc",borderRadius:"11px"}}>Short Time</button>
