@@ -19,9 +19,10 @@ const Maintimer = () => {
       return () => clearInterval(timer);
     }
     if(time.hour==0&&time.min==0&&time.sec==0&&isStart==true){
-      let noti=new Audio('../public/1.mp3')
+      let noti=new Audio('/1.mp3')
       noti.play();
       setstart(false)
+      console.log("done");
     }
   }, [isStart,time]);
 
