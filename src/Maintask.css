@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tasklist{
+    margin: auto;
+width: 70%;
+}
+.tasklist div{
+    border-radius: 11px;
+    margin: 10px;
+    padding: 10px 15px;
+}
+.tasklist div:hover{
+    background-color: rgb(48, 48, 48);
+}
+.taskAddbtn{
+    padding:7px 10px;
+    font-size:17px;
+    border:1px solid #cccccc;
+    border-radius:11px;
+}
+.taskAddinput{
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    margin-right: 15px
+}
+.taskAddinput:focus{
+    border-bottom: 1px solid white;
+}
+.donebtn{
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: #313030;
+}
+.donebtn:hover
+{
+
+}
