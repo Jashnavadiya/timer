@@ -9,11 +9,13 @@ const Maintask = () => {
   const tasksl = JSON.parse(localStorage.getItem('tasks')) || [];
   const [tasks, setTasks] = useState([...tasksl]);
 
-  const handletaskssub = () => {
+  const handletaskssub = (e) => {
+    e.preventDefault();
     if (taskinput.length !== 0) {
       let istask = tasks.filter((ele) => ele.task === taskinput);
       if (istask.length === 0) {
         setTasks([...tasks, { task: taskinput, done: false }]);
+        settaskinput("")
         toast.success('Task Been Added Get To work', {
           style: {
             borderRadius: '10px',
@@ -85,10 +87,10 @@ const Maintask = () => {
             }
           </div>
           <div className="flex-col absolute bottom-0 left-0 right-0  w-8/12 m-auto">
-            <div className="flex m-auto justify-between">
-              <input type="text" className="taskAddinput" onChange={(e) => settaskinput(e.target.value)} placeholder="Type Here" />
-              <button className="taskAddbtn" onClick={handletaskssub}>Add Task</button>
-            </div>
+            <form className="flex m-auto justify-between">
+              <input type="search" className="taskAddinput" value={taskinput} onChange={(e) => settaskinput(e.target.value)} placeholder="Type Here" />
+              <button type="submit" className="taskAddbtn" onClick={handletaskssub}>Add Task</button>
+            </form>
             
             <h1 className="text-slate-500 mt-2 text-sm">*Refresh Page To Remove Done Task</h1>
           </div>

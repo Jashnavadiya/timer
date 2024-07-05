@@ -35,7 +35,9 @@ width: 70%;
     padding: 2px 5px;
     background-color: #313030;
 }
-.donebtn:hover
-{
 
+.taskAddinput::-webkit-search-cancel-button{
+  
+    -webkit-appearance: none;
+  
 }
